@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opinion Section | Theodorian Scribe</title>
+    <style>
+        /* --- SAME DESIGN AS HOME --- */
+        :root {
+            --navy: #0d1b3e; --gold: #fdd835; --red: #a52a2a;
+            --white: #ffffff; --bg-light: #f4f6f8; --text-dark: #1a1a1a;
+        }
+        body { font-family: 'Georgia', serif; background-color: var(--bg-light); color: var(--text-dark); margin: 0; padding: 0; }
+        
+        /* HEADER */
+        header { background-color: var(--navy); padding: 20px; text-align: center; border-bottom: 5px solid var(--gold); }
+        .site-title { font-size: 2rem; font-weight: 900; text-transform: uppercase; color: var(--white); margin: 0; }
+        a { text-decoration: none; color: inherit; }
+
+        /* NAVIGATION */
+        nav { background-color: var(--red); text-align: center; position: sticky; top: 0; }
+        nav a { display: inline-block; color: var(--white); padding: 15px 20px; font-family: Arial, sans-serif; font-weight: bold; text-transform: uppercase; font-size: 0.8rem; }
+        nav a:hover { background-color: var(--navy); color: var(--gold); }
+
+        /* CONTENT */
+        .container { max-width: 900px; margin: 40px auto; padding: 0 20px; }
+        .section-header { border-bottom: 2px solid var(--navy); margin-bottom: 30px; padding-bottom: 10px; color: var(--navy); text-transform: uppercase; letter-spacing: 1px; }
+        
+        /* ARTICLE LIST CARD */
+        .article-card { background: var(--white); padding: 20px; margin-bottom: 20px; border-radius: 4px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); display: flex; gap: 20px; align-items: center; }
+        .card-img { width: 150px; height: 100px; background-color: #ddd; object-fit: cover; border-radius: 4px; }
+        .card-content { flex: 1; }
+        .card-title { margin: 0 0 10px 0; font-size: 1.5rem; color: var(--navy); }
+        .card-title:hover { color: var(--red); }
+        .card-meta { font-size: 0.8rem; color: #777; font-family: Arial, sans-serif; margin-bottom: 10px; }
+        .card-excerpt { font-size: 1rem; color: #444; margin: 0; }
+
+        @media (max-width: 600px) { .article-card { flex-direction: column; align-items: start; } .card-img { width: 100%; height: 150px; } }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="index.html"><h1 class="site-title">Theodorian Scribe</h1></a>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="news.html">News</a>
+        <a href="features.html">Features</a>
+        <a href="opinion.html">Opinion</a>
+        <a href="scitech.html">Sci-Tech</a>
+        <a href="about.html">About</a>
+    </nav>
+
+    <div class="container">
+        <h2 class="section-header">Latest News</h2>
+
+        <div class="article-card">
+            <img src="https://via.placeholder.com/150" class="card-img" alt="Thumbnail">
+            <div class="card-content">
+                <div class="card-meta">Nov 20, 2025 • By The Scribers</div>
+                <a href="pspc-win.html"><h3 class="card-title">St. Theodore Wins 7th Runner Up at PSPC</h3></a>
+                <p class="card-excerpt">The official delegates brought home the bacon after a 3-day intense competition in Taguig.</p>
+            </div>
+        </div>
+
+        <div class="article-card">
+            <img src="https://via.placeholder.com/150" class="card-img" alt="Thumbnail">
+            <div class="card-content">
+                <div class="card-meta">Nov 28, 2025 • By Staff</div>
+                <a href="#"><h3 class="card-title">Book Month Concludes with Parade</h3></a>
+                <p class="card-excerpt">Students dressed up as their favorite literary characters to celebrate the love for reading.</p>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
