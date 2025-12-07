@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Theodorian Scribe</title>
+    <style>
+        /* --- COPY CSS FROM ABOVE HERE, THEN ADD: --- */
+        :root { --navy: #0d1b3e; --gold: #fdd835; --red: #a52a2a; --white: #ffffff; --bg-light: #f4f6f8; --text-dark: #1a1a1a; }
+        body { font-family: 'Georgia', serif; background-color: var(--bg-light); color: var(--text-dark); margin: 0; padding: 0; }
+        header { background-color: var(--navy); padding: 20px; text-align: center; border-bottom: 5px solid var(--gold); }
+        .site-title { font-size: 2rem; font-weight: 900; text-transform: uppercase; color: var(--white); margin: 0; }
+        a { text-decoration: none; color: inherit; }
+        nav { background-color: var(--red); text-align: center; position: sticky; top: 0; }
+        nav a { display: inline-block; color: var(--white); padding: 15px 20px; font-family: Arial, sans-serif; font-weight: bold; text-transform: uppercase; font-size: 0.8rem; }
+        nav a:hover { background-color: var(--navy); color: var(--gold); }
+        
+        .container { max-width: 800px; margin: 40px auto; padding: 20px; text-align: center; }
+        
+        .staff-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 30px; margin-top: 40px; }
+        .staff-member { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); border-top: 4px solid var(--navy); }
+        .staff-photo { width: 100px; height: 100px; background-color: #ddd; border-radius: 50%; margin: 0 auto 15px; border: 3px solid var(--gold); }
+        .staff-name { font-weight: bold; font-size: 1.1rem; color: var(--navy); margin-bottom: 5px; }
+        .staff-role { font-size: 0.8rem; text-transform: uppercase; color: var(--red); font-family: Arial, sans-serif; letter-spacing: 1px; }
+    </style>
+</head>
+<body>
+    <header><a href="index.html"><h1 class="site-title">Theodorian Scribe</h1></a></header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="news.html">News</a>
+        <a href="features.html">Features</a>
+        <a href="opinion.html">Opinion</a>
+        <a href="scitech.html">Sci-Tech</a>
+        <a href="about.html">About</a>
+    </nav>
+
+    <div class="container">
+        <h1>The Editorial Board</h1>
+        <p>The student journalists behind the headlines.</p>
+
+        <div class="staff-grid">
+            <div class="staff-member">
+                <div class="staff-photo"></div> <div class="staff-name">Your Name</div>
+                <div class="staff-role">Editor-in-Chief</div>
+            </div>
+            <div class="staff-member">
+                <div class="staff-photo"></div>
+                <div class="staff-name">Student Name</div>
+                <div class="staff-role">Associate Editor</div>
+            </div>
+             <div class="staff-member">
+                <div class="staff-photo"></div>
+                <div class="staff-name">Student Name</div>
+                <div class="staff-role">Head Cartoonist</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
